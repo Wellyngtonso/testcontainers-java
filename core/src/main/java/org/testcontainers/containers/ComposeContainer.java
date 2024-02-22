@@ -59,7 +59,7 @@ public class ComposeContainer extends FailureDetectingExternalResource implement
 
     private boolean removeVolumes = true;
 
-    public static final String COMPOSE_EXECUTABLE = SystemUtils.IS_OS_WINDOWS ? "docker.exe" : "docker";
+    public static final String COMPOSE_EXECUTABLE = SystemUtils.IS_OS_WINDOWS ? "docker.exe" : "podman";
 
     private static final DockerImageName DEFAULT_IMAGE_NAME = DockerImageName.parse("docker:24.0.2");
 
